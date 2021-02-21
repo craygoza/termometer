@@ -17,6 +17,11 @@ public class TermometerApplication {
     public static void main(String[] args) {
         SpringApplication.run(TermometerApplication.class, args);
     }
+    
+    @GetMapping("/")
+    public String home(){
+        return "hello";
+    }
 
     @Autowired
     private Converter converter;
